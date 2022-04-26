@@ -48,7 +48,7 @@ function NavList() {
         <Box>
             <List>
                 <ListItem>
-                    <Link to="/" className="navLink-list">
+                    <Link to="/" className="headerCollapsed-link">
                         <ListItemIcon>
                             <HomeIcon />
                         </ListItemIcon>
@@ -56,7 +56,7 @@ function NavList() {
                     </Link>
                 </ListItem>
                 <ListItem>
-                    <Link to="/about" className='navLink-list'>
+                    <Link to="/about" className="headerCollapsed-link">
                         <ListItemIcon>
                             <BarChartIcon />
                         </ListItemIcon>
@@ -64,7 +64,7 @@ function NavList() {
                     </Link>
                 </ListItem>
                 <ListItem>
-                    <Link to="/services" className="navLink-list">
+                    <Link to="/services" className="headerCollapsed-link">
                         <ListItemIcon>
                             <GavelIcon />
                         </ListItemIcon>
@@ -72,7 +72,7 @@ function NavList() {
                     </Link>
                 </ListItem>
                 <ListItem>
-                    <Link to="/location" className="navLink-list">
+                    <Link to="/location" className="headerCollapsed-link">
                         <ListItemIcon>
                             <LocationOnIcon />
                         </ListItemIcon>
@@ -80,7 +80,7 @@ function NavList() {
                     </Link>
                 </ListItem>
                 <ListItem>
-                    <Link to="/contact" className="navLink-list">
+                    <Link to="/contact" className="headerCollapsed-link">
                         <ListItemIcon>
                             <PermContactCalendarIcon />
                         </ListItemIcon>
