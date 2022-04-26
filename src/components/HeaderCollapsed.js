@@ -28,9 +28,11 @@ export default function TemporaryDrawer() {
     };
 
     return (
-        <div>
+        <div className="headerCollapsedDiv">
             <React.Fragment>
-                <Button onClick={toggleDrawer(true)}><MenuIcon /></Button>
+                <Button onClick={toggleDrawer(true)}>
+                    <MenuIcon className="navButton" />
+                </Button>
                 <Drawer
                     anchor={'top'}
                     open={state['isOpen']}
