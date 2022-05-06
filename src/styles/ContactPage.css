@@ -1,0 +1,30 @@
+.contactPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactFormDiv {
+    margin-top: 30px;
+    border: solid 2px;
+    padding: 20px;
+}
+
+
+/* .textField {
+    background-color: blue;
+} */
+
+.checkboxContainer {
+    display: flex;
+    flex-flow: row wrap;
+    /* align-items: center;
+    justify-content: flex-end; */
+    border: solid 2px red;
+}
+
+.checkboxContainer label {
+    background-color:blueviolet;
+    
+}

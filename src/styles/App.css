@@ -5,3 +5,26 @@
     top: 0;
     bottom: 0;
 }
+
+.breadCrumbs {
+    display: flex;
+    width: 100vw;
+    background-color:rgb(150, 148, 148);
+}
+
+.breadCrumbDiv {
+    display: flex;
+}
+
+.breadCrumbs a, .breadCrumbDiv a {
+    color: white;
+    text-decoration: none;
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+}
+
+.breadCrumbIcon {
+    color: white;
+    font-size: 10px;
+}
