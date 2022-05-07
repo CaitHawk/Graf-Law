@@ -8,8 +8,8 @@
 
 .breadCrumbs {
     display: flex;
-    width: 100vw;
-    background-color:rgb(150, 148, 148);
+    padding: 20px 0 0 30px;
+    width: 600px;
 }
 
 .breadCrumbDiv {
@@ -17,14 +17,21 @@
 }
 
 .breadCrumbs a, .breadCrumbDiv a {
-    color: white;
+    color: gray;
     text-decoration: none;
     text-transform: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: .9rem;
+    letter-spacing: 1.5px;
+    margin: 10px;
 }
 
 .breadCrumbIcon {
-    color: white;
-    font-size: 10px;
+    color: gray;
+    margin: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .breadCrumbs {
+        display: none;
+    }
 }

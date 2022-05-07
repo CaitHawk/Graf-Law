@@ -12,13 +12,13 @@ class BreadCrumbs extends Component {
                 <Link to='/'>Home</Link>
                 {this.props.linkPath ?
                     <div className="breadCrumbDiv">
-                        <ArrowForwardIosIcon className='breadCrumbIcon' />
+                        <ArrowForwardIosIcon className='breadCrumbIcon' fontSize="small" />
                         <Link to={this.props.linkPath}>{this.props.linkTitle}</Link>
                     </div>
                     : null}
                 {this.props.serviceLinkPath ?
                     <div className="breadCrumbDiv">
-                        <ArrowForwardIosIcon className='breadCrumbIcon' />
+                        <ArrowForwardIosIcon className='breadCrumbIcon' fontSize="small" />
                         <Link to={`services/${this.props.serviceLinkPath}`}>
                             {this.props.serviceLinkTitle}
                         </Link>
@@ -29,5 +29,6 @@ class BreadCrumbs extends Component {
         )
     }
 }
+
 
 export default BreadCrumbs;
