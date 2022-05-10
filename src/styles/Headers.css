@@ -11,8 +11,9 @@
 
 .headerTitle {
     text-align: left;
-    font-size: 5vw;
+    font-size: 4vw;
     padding-left: 50px;
+    font-family: 'Libre Baskerville', serif;
 }
 
 /* .navUl {
