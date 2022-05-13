@@ -24,7 +24,7 @@ function CheckBoxForm() {
     return (
         <div className="checkboxDiv">
             <p>What can we help you with?<span>(Check all that apply)(optional)</span></p>
-            <FormGroup class="checkboxContainer">
+            <FormGroup className="checkboxContainer">
                 <FormControlLabel control={<Checkbox />} label="Chapter 7" />
                 <FormControlLabel control={<Checkbox />} label="Chapter 13" />
                 <FormControlLabel control={<Checkbox />} label="Divorce" />

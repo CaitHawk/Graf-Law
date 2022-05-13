@@ -1,0 +1,128 @@
+/* divorce page styles */
+
+.divorceMain {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+
+.divorceTitleDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    border-bottom: gray solid 2px;
+    color: rgb(90, 89, 89);
+    font-size: 2vw;
+}
+.divorceMainDiv {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.divorceTopDiv {
+    display: flex;
+    border: solid 2px red;
+    width: 90%;
+    margin: auto;
+}
+.divorceBottomDiv {
+    display: flex;
+}
+/* .divorceImageDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px yellow;
+} */
+.divorceImageDescription img {
+    width: 500px;
+    float: left;
+    margin: 10px;
+}
+.divorceImageDescription p {
+    text-align: justify;
+    font-size: 18px;
+}
+/* .divorceDescriptionDiv {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: solid 2px green;
+}
+.divorceDescriptionDiv p {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    color: rgb(75, 73, 73);
+    background-color: rgb(214, 214, 214);
+} */
+.divorceReqDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+.divorceAccordian {
+    width: 90%;
+}
+.insideAccordian {
+    display: flex;
+    flex-direction: column;
+}
+.restrictionSpan {
+    font-size: 10px;
+    color: red;
+    padding: 10px;
+}
+.courtFormLink {
+    text-decoration: none;
+    text-transform: none;
+    font-size: 12px;
+}
+.divorceBtnDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+.divorceBtnDiv a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+}
+.divorceBtn {
+    width: 50%;
+    height: 70px;
+    margin: auto;
+    background-color: rgb(51, 87, 51);
+    color: white;
+    border: solid 4px white;
+    border-radius: 10px;
+    font-size: 2vw;
+}
+.divorceBtn:hover {
+    opacity: .75;
+}
+
+@media screen and (max-width: 1110px) {
+    .divorceImageDescription, .divorceReqDiv, .divorceBtnDiv {
+        width: 100%;
+    }
+    .divorceBottomDiv, .divorceTopDiv {
+        display: flex;
+        flex-direction: column;
+    }
+    .divorceMain {
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 1111px) {
+    .divorceReqDiv, .divorceBtnDiv {
+        width: 50%;
+    }
+}

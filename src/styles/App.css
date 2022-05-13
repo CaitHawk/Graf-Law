@@ -31,6 +31,13 @@
     margin: 10px;
 }
 
+
+div.breadCrumbs > div > svg {
+    color: blue;
+    height: 12px;
+    width: 12px;
+}
+
 @media screen and (max-width: 700px) {
     .breadCrumbs {
         display: none;
