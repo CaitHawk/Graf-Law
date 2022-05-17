@@ -28,3 +28,30 @@
     background-color:blueviolet;
     
 }
+
+
+/* Contact Links styles */
+
+.contactLinksDiv {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 300px;
+}
+.contactLinksDiv a {
+    text-decoration: none;
+    text-transform: none;
+    color: rgb(44, 43, 43);
+    display: flex;
+    align-items: center;
+    margin: 3px;
+    font-size: 16px;
+}
+.contactLinksDiv a:hover {
+    opacity: 0.7;
+    text-decoration: underline;
+}
+div.contactLinksDiv > a > svg {
+    padding-right: 10px;
+}

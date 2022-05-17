@@ -11,10 +11,12 @@
     padding: 20px 0 0 30px;
     width: 100%;
     background-color: rgb(240, 240, 240);
+    align-items: baseline;
 }
 
 .breadCrumbDiv {
     display: flex;
+    align-items: baseline;
 }
 
 .breadCrumbs a, .breadCrumbDiv a {
@@ -33,7 +35,6 @@
 
 
 div.breadCrumbs > div > svg {
-    color: blue;
     height: 12px;
     width: 12px;
 }
