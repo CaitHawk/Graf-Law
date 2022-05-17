@@ -13,7 +13,7 @@ function ContactFooterLeft () {
         <div className="footerLeft">
             <a href="tel:+18086206392"><LocalPhoneIcon />{contactInfo.phoneNumber}</a>
             <a><AlternateEmailIcon />{contactInfo.email}</a>
-            <a style={{ fontWrap: "wrap" }}><MailOutlineIcon />{contactInfo.address}</a>
+            <a style={{ fontWrap: "wrap", fontSize: "14px" }}><MailOutlineIcon />{contactInfo.address}</a>
         </div>
     )
 }
@@ -31,11 +31,11 @@ function ContactFooterRight () {
 function Footer () {
     return (
         <div className="footerDiv">
-            <ContactFooterLeft className='footerLeft' />
+            <ContactFooterLeft />
             <div className="footerBtnDiv">
                 <Link className="footerBtn" to="/contact">Schedule a Consultation</Link>
             </div>
-            <ContactFooterRight className='footerRight' />
+            <ContactFooterRight />
         </div>
     )
 }

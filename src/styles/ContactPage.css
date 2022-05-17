@@ -1,33 +1,22 @@
 .contactPageContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    background-color: rgb(240, 240, 240);
 }
 
 .contactFormDiv {
-    margin-top: 30px;
-    border: solid 2px;
+    margin: 40px 0;
+    border: solid 1px gray;
+    border-radius: 10px;
     padding: 20px;
+    width: 90%;
+    height: 100%;
+    box-shadow: 2px 2px 4px gray;
 }
 
 
-/* .textField {
-    background-color: blue;
-} */
-
-.checkboxContainer {
-    display: flex;
-    flex-flow: row wrap;
-    /* align-items: center;
-    justify-content: flex-end; */
-    border: solid 2px red;
-}
-
-.checkboxContainer label {
-    background-color:blueviolet;
-    
-}
 
 
 /* Contact Links styles */

@@ -2,6 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import '../styles/Headers.css';
 import '../styles/DropDownNavTwo.css';
+import Logo from '../images/grafLogo.png';
 
 let activeClassName = 'active'
 let unactiveClassName = 'unactive'
@@ -23,7 +24,7 @@ export default function HeaderFull() {
     ))
     return (
         <div className="headerFullDiv">
-            <h1 className="headerTitle">The Law Offices of Andrea Graf</h1>
+            <img src={Logo} alt="Graf Law Logo" className="logo" />
             <nav className="nav-area">
                 <ul style={{ listStyle: 'none' }}
                     className="navUl" >

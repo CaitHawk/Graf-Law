@@ -15,30 +15,29 @@ export default function ContactForm() {
             <InputForm />
             <SelectForm />
             <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-            <CheckBoxForm />
         </div >
     )
 }
 
-function CheckBoxForm() {
-    return (
-        <div className="checkboxDiv">
-            <p>What can we help you with?<span>(Check all that apply)(optional)</span></p>
-            <FormGroup className="checkboxContainer">
-                <FormControlLabel control={<Checkbox />} label="Chapter 7" />
-                <FormControlLabel control={<Checkbox />} label="Chapter 13" />
-                <FormControlLabel control={<Checkbox />} label="Divorce" />
-                <FormControlLabel control={<Checkbox />} label="Custody" />
-                <FormControlLabel control={<Checkbox />} label="Will" />
-                <FormControlLabel control={<Checkbox />} label="Trust" />
-                <FormControlLabel control={<Checkbox />} label="DUI" />
-                <FormControlLabel control={<Checkbox />} label="Traffic Ticket" />
-                <FormControlLabel control={<Checkbox />} label="Car Accident" />
-                <FormControlLabel control={<Checkbox />} label="Settlements" />
-            </FormGroup>
-        </div>
-    )
-}
+// function CheckBoxForm() {
+//     return (
+//         <div className="checkboxDiv">
+//             <p>What can we help you with?<span>(Check all that apply)(optional)</span></p>
+//             <FormGroup className="checkboxContainer">
+//                 <FormControlLabel control={<Checkbox />} label="Chapter 7" />
+//                 <FormControlLabel control={<Checkbox />} label="Chapter 13" />
+//                 <FormControlLabel control={<Checkbox />} label="Divorce" />
+//                 <FormControlLabel control={<Checkbox />} label="Custody" />
+//                 <FormControlLabel control={<Checkbox />} label="Will" />
+//                 <FormControlLabel control={<Checkbox />} label="Trust" />
+//                 <FormControlLabel control={<Checkbox />} label="DUI" />
+//                 <FormControlLabel control={<Checkbox />} label="Traffic Ticket" />
+//                 <FormControlLabel control={<Checkbox />} label="Car Accident" />
+//                 <FormControlLabel control={<Checkbox />} label="Settlements" />
+//             </FormGroup>
+//         </div>
+//     )
+// }
 
 function InputForm() {
     return (
