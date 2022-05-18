@@ -1,4 +1,4 @@
-import BreadCrumbs from "./breadCrumbs";
+import BreadCrumbs from '../../components/breadCrumbs';
 import { Link } from 'react-router-dom';
 import '../../styles/serviceStyles.css';
 import Accordion from '@mui/material/Accordion';
@@ -6,68 +6,41 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import image from '../../images/divorce2.jpg';
 
-export default function DivorceRouter() {
-    return (
-        <main className="servicePageMain">
-            <BreadCrumbs
-                linkPath='/services'
-                linkTitle='Services'
-                serviceLinkPath='/divorce'
-                serviceLinkTitle='Divorce'
-            />
-            <div className="servicePageTitleDiv">
-                <h1>{divorcePage.title}</h1>
-            </div>
-            <div className="servicePageMainDiv">
-                <ul className="servicePageTopDiv">
-                    {divorcePage.description.map(card => (
-                        <li className="servicePageDescriptionCard">
-                            <div className="servicePageDescriptionCardTop">
-                                <h2>{card.title}</h2>
-                            </div>
-                            <div className="servicePageDescriptionCardBottom">
-                                <p>{card.description}</p>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
-
-
-
-                {/* <div className="servicePageTopDiv">
-                    <div className="servicePageDescriptionCard">
-                        <div className="servicePageDescriptionCardTop">
-                            <h2>{divorcePage.description[0].title1}</h2>
-                        </div>
-                        <div className="servicePageDescriptionCardBottom">
-                            <p>{divorcePage.description[0].description1}</p>
-                        </div>
-                    </div>
-
-
-                    <div className="servicePageDescriptionCard">
-                        <h2>{divorcePage.description[1].title2}</h2>
-                        <p>{divorcePage.description[1].description2}</p>
-                    </div>
-                    <div className="servicePageDescriptionCard">
-                        <h2>{divorcePage.description[2].title3}</h2>
-                        <p>{divorcePage.description[2].description3}</p>
-                    </div>
-                </div> */}
-
-                <div className="servicePageBottomDiv">
-                    <DivorceAccordian />
-                    <div className="servicePageBtnDiv">
-                        <Link to='/contact'>
-                            <button className="servicePageBtn">Call Now</button>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </main>
-    )
+const divorcePage = {
+    title: "Divorce",
+    image: '../../images/divorce2.jpg',
+    description: [
+        {
+            title: "Contested",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque inventore sapiente porro deserunt enim, maiores omnis corporis reprehenderit sunt nulla, voluptatibus repudiandae iure nisi praesentium velit assumenda! Expedita, maiores! Est ullam iure necessitatibus harum dolorum, perferendis fugit, provident reprehenderit beatae cupiditate repudiandae qui laboriosam libero, excepturi natus quas animi consectetur quasi deleniti dolor ab. Itaque sunt quibusdam tempora rerum. Architecto odio libero impedit ipsam qui delectus omnis quam id a, eos voluptatibus est dignissimos aperiam nobis odit quia alias sapiente. Nulla provident iste illum, itaque ab in cupiditate sunt.",
+        },
+        {
+            title: "Uncontested/Semi-Contested",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque inventore sapiente porro deserunt enim, maiores omnis corporis reprehenderit sunt nulla, voluptatibus repudiandae iure nisi praesentium velit assumenda! Expedita, maiores! Est ullam iure necessitatibus harum dolorum, perferendis fugit, provident reprehenderit beatae cupiditate repudiandae qui laboriosam libero, excepturi natus quas animi consectetur quasi deleniti dolor ab. Itaque sunt quibusdam tempora rerum. Architecto odio libero impedit ipsam qui delectus omnis quam id a, eos voluptatibus est dignissimos aperiam nobis odit quia alias sapiente. Nulla provident iste illum, itaque ab in cupiditate sunt.",
+        },
+        {
+            title: "Military",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque inventore sapiente porro deserunt enim, maiores omnis corporis reprehenderit sunt nulla, voluptatibus repudiandae iure nisi praesentium velit assumenda! Expedita, maiores! Est ullam iure necessitatibus harum dolorum, perferendis fugit, provident reprehenderit beatae cupiditate repudiandae qui laboriosam libero, excepturi natus quas animi consectetur quasi deleniti dolor ab. Itaque sunt quibusdam tempora rerum. Architecto odio libero impedit ipsam qui delectus omnis quam id a, eos voluptatibus est dignissimos aperiam nobis odit quia alias sapiente. Nulla provident iste illum, itaque ab in cupiditate sunt."
+        }
+    ],
+    requirements: ['Past Three(3) months paystubs or LES', 'Previous Filings', 'Previous Agreements'],
+    billingInformation: ['first thing', 'second thing', 'third thing'],
+    whatYoullNeed: ['first thing', 'second thing', 'third thing'],
+    courtForms: [
+        {
+            courtFormTitle: 'courtFormTitle',
+            courtFormLink: 'urlHere'
+        },
+        {
+            courtFormTitle: 'courtFormTitle',
+            courtFormLink: 'urlHere'
+        },
+        {
+            courtFormTitle: 'courtFormTitle',
+            courtFormLink: 'urlHere'
+        },
+    ]
 }
 
 function DivorceAccordian() {
@@ -167,38 +140,42 @@ function DivorceAccordian() {
     )
 }
 
-const divorcePage = {
-    title: "Divorce",
-    image: '../../images/divorce2.jpg',
-    description: [
-        {
-            title: "Contested",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque inventore sapiente porro deserunt enim, maiores omnis corporis reprehenderit sunt nulla, voluptatibus repudiandae iure nisi praesentium velit assumenda! Expedita, maiores! Est ullam iure necessitatibus harum dolorum, perferendis fugit, provident reprehenderit beatae cupiditate repudiandae qui laboriosam libero, excepturi natus quas animi consectetur quasi deleniti dolor ab. Itaque sunt quibusdam tempora rerum. Architecto odio libero impedit ipsam qui delectus omnis quam id a, eos voluptatibus est dignissimos aperiam nobis odit quia alias sapiente. Nulla provident iste illum, itaque ab in cupiditate sunt.",
-        },
-        {
-            title: "Uncontested/Semi-Contested",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque inventore sapiente porro deserunt enim, maiores omnis corporis reprehenderit sunt nulla, voluptatibus repudiandae iure nisi praesentium velit assumenda! Expedita, maiores! Est ullam iure necessitatibus harum dolorum, perferendis fugit, provident reprehenderit beatae cupiditate repudiandae qui laboriosam libero, excepturi natus quas animi consectetur quasi deleniti dolor ab. Itaque sunt quibusdam tempora rerum. Architecto odio libero impedit ipsam qui delectus omnis quam id a, eos voluptatibus est dignissimos aperiam nobis odit quia alias sapiente. Nulla provident iste illum, itaque ab in cupiditate sunt.",
-        },
-        {
-            title: "Military",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam neque inventore sapiente porro deserunt enim, maiores omnis corporis reprehenderit sunt nulla, voluptatibus repudiandae iure nisi praesentium velit assumenda! Expedita, maiores! Est ullam iure necessitatibus harum dolorum, perferendis fugit, provident reprehenderit beatae cupiditate repudiandae qui laboriosam libero, excepturi natus quas animi consectetur quasi deleniti dolor ab. Itaque sunt quibusdam tempora rerum. Architecto odio libero impedit ipsam qui delectus omnis quam id a, eos voluptatibus est dignissimos aperiam nobis odit quia alias sapiente. Nulla provident iste illum, itaque ab in cupiditate sunt."
-        }
-    ],
-    requirements: ['Past Three(3) months paystubs or LES', 'Previous Filings', 'Previous Agreements'],
-    billingInformation: ['first thing', 'second thing', 'third thing'],
-    whatYoullNeed: ['first thing', 'second thing', 'third thing'],
-    courtForms: [
-        {
-            courtFormTitle: 'courtFormTitle',
-            courtFormLink: 'urlHere'
-        },
-        {
-            courtFormTitle: 'courtFormTitle',
-            courtFormLink: 'urlHere'
-        },
-        {
-            courtFormTitle: 'courtFormTitle',
-            courtFormLink: 'urlHere'
-        },
-    ]
+export default function DivorceRouter() {
+    return (
+        <main className="servicePageMain">
+            <BreadCrumbs
+                linkPath='/services'
+                linkTitle='Services'
+                serviceLinkPath='/divorce'
+                serviceLinkTitle='Divorce'
+            />
+            <div className="servicePageTitleDiv">
+                <h1>{divorcePage.title}</h1>
+            </div>
+            <div className="servicePageMainDiv">
+                <ul className="servicePageTopDiv">
+                    {divorcePage.description.map(card => (
+                        <li className="servicePageDescriptionCard">
+                            <div className="servicePageDescriptionCardTop">
+                                <h2>{card.title}</h2>
+                            </div>
+                            <div className="servicePageDescriptionCardBottom">
+                                <p>{card.description}</p>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+
+                <div className="servicePageBottomDiv">
+                    <DivorceAccordian />
+                    <div className="servicePageBtnDiv">
+                        <Link to='/contact'>
+                            <button className="servicePageBtn">Call Now</button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </main>
+    )
 }
+

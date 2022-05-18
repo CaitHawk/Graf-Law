@@ -1,4 +1,4 @@
-import BreadCrumbs from "./servicesRoutes/breadCrumbs";
+import BreadCrumbs from '../components/breadCrumbs';
 import '../styles/aboutPage.css';
 import hawaii1 from '../images/hawaii1.jpg';
 import hawaii2 from '../images/hawaii2.jpg';

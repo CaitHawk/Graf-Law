@@ -1,4 +1,4 @@
-import BreadCrumbs from "./servicesRoutes/breadCrumbs"
+import BreadCrumbs from '../components/breadCrumbs';
 import { Component } from 'react';
 import { Link } from 'react-router-dom';
 import custodyImage from '../images/custody2.jpg';
@@ -69,7 +69,7 @@ class ServiceCard extends Component {
     render() {
         return (
             <Link to={this.props.path} className='serviceCardLink'>
-                <h1>{this.props.title}</h1>
+                <h1 className="cardTitle">{this.props.title}</h1>
                 <div className="cardImgDiv">
                     <img src={this.props.image} alt={this.props.title} className="cardImg" />
                 </div>

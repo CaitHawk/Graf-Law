@@ -1,6 +1,6 @@
 import ContactForm from "../components/ContactForm";
 import '../styles/ContactPage.css';
-import BreadCrumbs from "./servicesRoutes/breadCrumbs";
+import BreadCrumbs from "../components/breadCrumbs";
 
 export default function ContactRouter() {
     return (
