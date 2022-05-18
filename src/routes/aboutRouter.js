@@ -6,7 +6,6 @@ import hawaii3 from '../images/hawaii3.jpg';
 import hsbaImg from '../images/hsba.png';
 import abaImg from '../images/amricanbarassociation.jpg';
 import bbbImg from '../images/betterBusiness2.png';
-import Footer from '../components/Footer';
 
 export default function AboutRouter() {
     return (
@@ -29,7 +28,6 @@ export default function AboutRouter() {
                     <img src={hsbaImg} atl="Hawaii State Bar Association" className="affiliationImg" />
                 </section>
             </main>
-            <Footer />
         </main>
     )
 }

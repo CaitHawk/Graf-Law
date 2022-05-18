@@ -105,7 +105,7 @@
     padding-right: 5px;
 }
 .footerLeft a:hover, .footerRight a:hover {
-    color: green;
+    color: rgb(80, 107, 88);
     cursor: pointer;
 }
 
@@ -125,7 +125,7 @@
     text-decoration: none;
     text-transform: none;
     padding: 15px 25px;
-    background-color: green;
+    background-color: rgb(80, 107, 88);
     color: white;
     border-radius: 10px;
     font-family: Arial;

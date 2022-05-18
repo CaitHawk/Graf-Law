@@ -2,7 +2,7 @@ import { NavLink, Link } from 'react-router-dom';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import '../styles/Headers.css';
 import '../styles/DropDownNavTwo.css';
-import Logo from '../images/grafLogo.png';
+import Logo from '../images/grafLogo2.png';
 
 let activeClassName = 'active'
 let unactiveClassName = 'unactive'

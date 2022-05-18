@@ -28,6 +28,11 @@
     margin: 10px;
 }
 
+.breadCrumbs a:hover, .breadCrumbDiv a:hover {
+    /* text-decoration: underline; */
+    opacity: .8;
+}
+
 .breadCrumbIcon {
     color: gray;
     margin: 10px;
