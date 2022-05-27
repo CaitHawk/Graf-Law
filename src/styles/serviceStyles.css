@@ -24,6 +24,8 @@
     width: 95%;
     margin: auto;
     list-style: none;
+    padding: 0;
+
 }
 .servicePageDescriptionCard {
     border: solid 1px gray;
@@ -101,9 +103,10 @@
     margin: auto;
     background-color: rgb(80, 107, 88);
     color: white;
-    border: solid 4px white;
     border-radius: 10px;
     font-size: 2vw;
+    border: none;
+    box-shadow: 2px 2px 4px gray;
 }
 .servicePageBtn:hover {
     opacity: .75;

@@ -12,16 +12,23 @@ export default function AboutRouter() {
         <main>
             <BreadCrumbs linkPath="/about" linkTitle="About" />
             <main className="aboutMain">
-                <section className="aboutUsSection">
-                    <img className="aboutImg" src={aboutPage.aboutUsImg} alt="hawaii" />
-                    <h2>About Us</h2>
-                    <p>{aboutPage.aboutUs}</p>
-                </section>
-                <section className="aboutMeSection">
-                    <img className="aboutImg" src={aboutPage.aboutMeImg} alt="hawaii" />
-                    <h2>About Me</h2>
-                    <p>{aboutPage.aboutMe}</p>
-                </section>
+                <h1 className="aboutPageTitle">Read about us:</h1>
+                <div className="aboutSections">
+                    <section className="aboutUsSection">
+                        <img className="aboutImg" src={aboutPage.aboutUsImg} alt="hawaii" />
+                        <div className="aboutInfoDiv">
+                            <h2>What we do</h2>
+                            <p>{aboutPage.aboutUs}</p>
+                        </div>
+                    </section>
+                    <section className="aboutMeSection">
+                        <img className="aboutImg" src={aboutPage.aboutMeImg} alt="hawaii" />
+                        <div className="aboutInfoDiv">
+                            <h2>Who we are</h2>
+                            <p>{aboutPage.aboutMe}</p>
+                        </div>
+                    </section>
+                </div>
                 <section className="affiliationSection">
                     <img src={abaImg} atl="American Bar Association" className="affiliationImg" />
                     <img src={bbbImg} atl="Better Business Bureau" className="affiliationImg" />

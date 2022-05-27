@@ -5,8 +5,28 @@
     align-items: center;
 }
 
-.aboutImg {
-    width: 500px;
+.aboutInfoDiv {
+    padding-left: 10px;
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 10px;
+}
+.aboutInfoDiv h2 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    background-color: rgb(161, 161, 161);
+    padding: 7px 0;
+    border-radius: 2px;
+    /* color: rgb(61, 61, 61); */
+    color: white;
+    letter-spacing: 1px;
+}
+.aboutInfoDiv p {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    letter-spacing: 1px;
+    font-size: 18px;
 }
 
 .affiliationSection {
@@ -14,7 +34,6 @@
     justify-content: space-around;
     padding: 50px 0;
     width: 90%;
-    border-top: gray solid 2px;
     flex-wrap: wrap;
 }
 
@@ -23,4 +42,77 @@
     border-radius: 17px;
     border: solid white 1px;
     margin: 20px;
+    max-width: 90%;
+}
+
+
+/* large screens */
+@media screen and (min-width: 951px) {
+    .aboutMeSection {
+        display: flex;
+        margin: 10px;
+        padding: 20px 0;
+    }
+    .aboutUsSection {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 10px;
+    }
+    .aboutImg {
+        min-width: 25%;
+        margin: 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px gray;
+    }
+    .aboutSections {
+        border: 1px solid rgb(167, 166, 166);
+        width: 90%;
+        margin-top: 30px;
+        border-radius: 5px;
+    }
+    .aboutPageTitle {
+        /* font-family: 'Quicksand', sans-serif; */
+        font-family: 'Rubik', sans-serif;
+        /* text-transform: uppercase; */
+        padding-top: 20px;
+        font-size: 6vw;
+        text-align: center;
+        margin: 0;
+        color: rgb(61, 61, 61)
+    }
+
+}
+
+
+/* small screens */
+@media screen and (max-width: 950px) {
+    .aboutUsSection, .aboutMeSection {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .aboutImg {
+        width: 90%;
+        border-radius: 5px;
+        box-shadow: 2px 2px 4px gray;
+        margin: 20px auto;
+    }
+    .aboutSections {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .aboutInfoDiv {
+        padding-bottom: 20px;
+    }
+    .aboutPageTitle {
+        /* font-family: 'Quicksand', sans-serif; */
+        font-family: 'Rubik', sans-serif;
+        /* text-transform: uppercase; */
+        padding-top: 20px;
+        font-size: 9vw;
+        text-align: center;
+        margin: 0;
+        color: rgb(61, 61, 61)
+    }
+
 }

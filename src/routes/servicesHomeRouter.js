@@ -50,7 +50,7 @@ export default function ServicesHomeRouter() {
                     <li key={`${service.title.split(" ").join("")}Card`} className="serviceCardDiv">
                         <ServiceCard
                             title={service.title}
-                            path={`services/${service.title.split(" ").join("").toLowerCase()}`}
+                            path={`${service.title.split(" ").join("").toLowerCase()}`}
                             image={service.image}
                             shortDescription={service.shortDescription}
                         />
